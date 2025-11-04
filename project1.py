@@ -24,14 +24,16 @@ if templates == '1':
     word = input('Input a silly word: ')
     noun5 = input('Input noun again: ')
 
-    print(f"It was about {number} {time} ago when I arrived at the hospital in a {transport}.")
-    print(f"The hospital is a/an {adjective1} place, there are a lot of {adjective2} {noun} here.")
-    print(f"There are nurses here who have {color} {body}.")
-    print(f"If someone wants to come into my room I told them that they have to {verb} first.")
-    print(f"I’ve decorated my room with {number2} {noun2}.")
-    print(f"Today I talked to a doctor and they were wearing a {noun3} on their {body2}.")
-    print(f"I heard that all doctors {verb2} {noun4} every day for breakfast.")
-    print(f"The most {adjective3} thing about being in the hospital is the {word} {noun5}!")
+    story = (
+        f"It was about {number} {time} ago when I arrived at the hospital in a {transport}. "
+        f"The hospital is a/an {adjective1} place, there are a lot of {adjective2} {noun} here. "
+        f"There are nurses here who have {color} {body}. "
+        f"If someone wants to come into my room I told them that they have to {verb} first. "
+        f"I’ve decorated my room with {number2} {noun2}. "
+        f"Today I talked to a doctor and they were wearing a {noun3} on their {body2}. "
+        f"I heard that all doctors {verb2} {noun4} every day for breakfast. "
+        f"The most {adjective3} thing about being in the hospital is the {word} {noun5}!"
+    )
 
 
 elif templates == '2':
@@ -53,17 +55,20 @@ elif templates == '2':
     word = input('Input silly word: ')
     noun2 = input('Input noun again: ')
 
-    print(f"This weekend I am going camping with {name}.")
-    print(f"I packed my lantern, sleeping bag, and {noun}.")
-    print(f"I am so {feeling} to {verb} in a tent.")
-    print(f"I am {feeling2} we might see a(n) {animal}, I hear they’re kind of dangerous.")
-    print(f"While we’re camping, we are going to hike, fish, and {verb2}.")
-    print(f"I have heard that the {color} lake is great for {verb3}.")
-    print(f"Then we will {adverb} hike through the forest for {number} {time}.")
-    print(f"If I see a {color2} {animal2} while hiking, I am going to bring it home as a pet!")
-    print(f"At night we will tell {number2} {word} stories and roast {noun2} around the campfire!!")
+    story = (
+        f"This weekend I am going camping with {name}. "
+        f"I packed my lantern, sleeping bag, and {noun}. "
+        f"I am so {feeling} to {verb} in a tent. "
+        f"I am {feeling2} we might see a(n) {animal}, I hear they’re kind of dangerous. "
+        f"While we’re camping, we are going to hike, fish, and {verb2}. "
+        f"I have heard that the {color} lake is great for {verb3}. "
+        f"Then we will {adverb} hike through the forest for {number} {time}. "
+        f"If I see a {color2} {animal2} while hiking, I am going to bring it home as a pet! "
+        f"At night we will tell {number2} {word} stories and roast {noun2} around the campfire!!"
+    )
 
-else: 
+
+elif templates == '3': 
     name = input('Input name: ')
     adjective = input('Input adjective: ')
     color = input('Input a color: ')
@@ -85,11 +90,19 @@ else:
     adjective5 = input('Input adjective again: ')
     noun5 = input('Input a noun again: ')
 
-    print(f"Dear {name},")
-    print(f"I am writing to you from a {adjective} castle in an enchanted forest.")
-    print(f"I found myself here one day after going for a ride on a {color} {animal} in {place}.")
-    print(f"There are {adjective2} {magical_creature} and {adjective3} {magical_creature2} here!")
-    print(f"In the {room}, there is a pool full of {noun}.")
-    print(f"I fall asleep each night on a {noun2} of {noun3} and dream of {adjective4} {noun4}.")
-    print(f"It feels as though I have lived here for {number} {time}.")
-    print(f"I hope one day you can visit, although the only way to get here now is {verb} on a {adjective5} {noun5}!!")
+    story = (
+        f"This weekend I am going camping with {name}. "
+        f"I packed my lantern, sleeping bag, and {noun}. "
+        f"I am so {feeling} to {verb} in a tent. "
+        f"I am {feeling2} we might see a(n) {animal}, I hear they’re kind of dangerous. "
+        f"While we’re camping, we are going to hike, fish, and {verb2}. "
+        f"I have heard that the {color} lake is great for {verb3}. "
+        f"Then we will {adverb} hike through the forest for {number} {time}. "
+        f"If I see a {color2} {animal2} while hiking, I am going to bring it home as a pet! "
+        f"At night we will tell {number2} {word} stories and roast {noun2} around the campfire!!"
+    )
+
+    else: 
+        print(f"Invalid input. Please enter 1, 2, or 3")
+
+    print(story)
